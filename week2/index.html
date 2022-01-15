@@ -9,5 +9,196 @@
 </head>
 <body>
     <h1>Week 2 Notes</h1>
+
+    <h2>Notes</h2>
+    <main>
+    <ul>
+        <li>Programming is about making computers do what you want. There are three different programming languages: 
+            low level programming languages which consist of machine code and assembly language and are closely associated 
+            with a computer's hardware.</li>
+        <li>High level programming languages consists of codes that are easier for humans to read and write. 
+                Such examples are C, C++ or Java, which is then compiled into machine code and executed. 
+                Due to the level of these programming languages, it makes the programs very fast.</li>
+        <li>Scripting languages are also high-level, but they are interpreted, which means they are translated into machine code at run time.  
+            JavaScript is one of the most popular programming languages in the world and nearly all web browsers can run it. 
+            JavaScript is a high-level scripting language that is interpreted and compiled at run time.</li>
+        
+            <li>A well-commented code is very important for a programmer. It makes it easier for anybody reading the code to understand what's going on, 
+                and that includes the programmer.</li>
+            </ul>
+            
+
+    <h2>Programming Basics</h2>
+
+    <h3>How JavaScript Works</h3>
+    <h3>Comments</h3>
+    <p>// this is a short comment</p>  
+    <p>/* This is a longer comment</p>
+    <p>anything here will be ignored</p>
+    <p>This is a useful place to put notes</p>
+    <p>*/</p>
+    <h3>JavaScript Grammar</h3> 
+    <h3>Statements:</h3>
+    <p>const message = 'Hello World!';</p>
+    <p>alert(message);</p>
+    <h3>Block:</h3>
+    <p>A block is a series of statements that are collected together inside curly braces</p>
+    <p>Blocks do not need to be terminated by a semicolon.</p> 
+    <h3>Data Types</h3> 
+    <ol>
+        <li>String</li>
+        <li>Symbol </li>
+        <li>Number </li>
+        <li>Boolean </li>
+        <li>Undefined </li>
+        <li>Null</li>
+        <li>Object</li>
+    </ol>
+
+    <h3>Variables</h3>
+    <p>From ES6 onwards, JavaScript uses the keywords "const" and "let" to declare variables.</p>
+    <p>They are block scoped, so their value only exists inside the block they are declared in.</p>
+
+    <h3>Naming Constants & Variables</h3>
+    <p>When naming constants and variables, it is important to give them sensible names that describe what the variable represents</p>
+    <p>The folowing are examples of naming variables:</p>
+    <p>$name</p>
+    <p>_answer</p> 
+    <p>firstName</p>    
+    <p>last_name</p>    
+    <p>address_line1</p>
+
+    <h3>Template Literals</h3>
+    <p>Template literals use the backtick character, `, to deliminate the string.</p>
+    <p>const name = `Siri`;</p>
+    <p>`Hello ${ name }!`;</p>
+    <p> 'Hello Siri!'</p>
+        
+    <p>const age = 39;</p>
+    <p>`I will be ${ age + 1 } next year`;</p>
+    <p> 'I will be 40 next year'</p> 
+
+    <h3>Symbols</h3>
+    <p>const uniqueID = Symbol('this is a unique ID'); </p>
+    <p>It is possible for two variables to point to the same symbol if the for() method is used when the symbol is created:</p>
+    <p>const A = Symbol.for('shared symbol');</p>
+    <p>const B = Symbol.for('shared symbol');</p>
+
+    <h3>Numbers</h3>
+    <p>Numbers can either be integers (whole numbers, such as 1,5,53) or floating point numbers (often referred to as just 'decimals' or 'floats', such as 2.75, 57.89, 3.14159)</p>                
+
+    
+    <h3>Arithmetic Operations</h3>
+    <p>Addition: 5 + 4.3;</p>
+    
+    <h3>Arithmetic Operations</h3>
+    <p>Subtraction: 6 - 11;</p>
+    
+    <h3>Multiplication</h3>
+    <p>6 * 7;</p>
+    
+    <h3>Division</h3>
+    <p>3/7;</p>
+    
+    <h3>Exponentiation</h3>
+    <p>2**3;</p>
+    
+    <h3>Remaider of a division</h3>
+    <p>23%6;</p>
+    
+    <h3>Changing The Value of Variables</h3>
+    <p>points += 10;</p>
+    <p>points *= 2;</p>
+    <p>points /= 2;</p>
+    <p>points %= 2;</p>
+    
+    <h3>Incremeting Values</h3>
+    <p>Increment a value by 1</p>
+    <p>points++;</p>
+    <p>++points;</p>
+
+    <p>Decrement a value by 1</p>
+    <p>points--;</p>
+    <p>--points;</p>
+
+    <h3>Checking a Value is a Number</h3>
+    <p>Number.isFinite(1/0);</p>
+
+    <h2>Arrays, Logic, and Loops</h2>
+    <h3>Arrays</h3>
+    <p>Array is an ordered list of values.</p>
+    <p>const myArray = [];</p>
+    <p>const myArray = new Array();</p>
+
+                    <h3>Adding Values to Arrays</h3>
+                    <p>heroes[0] = "Superman";</p>
+
+                    <h3>Removing Values from Arrays</h3>
+                    <p>delete avengers[3];</p>
+
+                    <h3>Destructuring Arrays</h3>
+                    <p>const [x,y] = [1,2];</p>
+
+                    <h3>Array Properties and Methods</h3>
+                    <p>const avengers = ['Captain America', 'Iron Man', 'Thor', 'Hulk', 'Hawkeye', 'Black Widow'];</p>
+                    <p>avengers.length;</p>
+                    <p>avengers[avengers.length - 1];</p>
+
+                    <h3>Unshift, Push, Shift, Pop</h3>
+                    <p>avengers.unshift('Captain America'); /Appends a new value to the begin</p> 
+                    <p>avengers.push("Thor"); /Appends a new value to the end</p>
+                    <p>avengers.shift("Thor"); /To remove the first item</p>
+                    <p>avengers.pop(); /To remove the last item</p>
+
+                    <h3>Merging Arrays</h3>
+                    <p>avengers.concat(['Hulk','Hawkeye', 'Black Widow']);</p>
+
+                    <h3>The Join Method</h3>
+                    <p>The join() method can be used to turn the array into a string that comprises all the items in the array, separated by commas:</p>
+                    <p>avengers.concat(['Hulk','Hawkeye', 'Black Widow']);</p>
+                    <p>avengers.join();</p>
+                    <p>'Captain America, Iron Man, Thor, Hulk, Hawkeye, Black Widow'</p>
+
+                    <h3>Slicing and Splicing</h3>
+                    <p>avengers.slice(2,4) // starts at the third item (index of 2) and finishes at the fourth (the item with index 4 is not included)</p>
+                    <p>avengers.splice(3, 1, 'Scarlet Witch'); //removes items from an array then inserts new items in their place</p>
+    <h3>Sets</h3>
+    <p>A set is a data structure that represents a collection of unique values, so it cannot include any duplicate values. </p>
+    
+    <h2>Functions</h2>
+    <p>A function is a chunk of code that can be referenced by a name, and is almost like a small, self-contained mini program.</p>
+    <h3>Function Declarations</h3>
+                    <p>function hello(){</p>
+                    <p>console.log('Hello World!');</p>
+                    <p>}</p>
+                    <p>A function declaration ends in a block (there's no need for semicolons at the end of blocks).</p>
+                    
+
+                    <h3>Function Expressions</h3>
+                    <p>const goodbye = function(){</p>
+                    <p>console.log('Goodbye World!');</p>
+                    <p>};</p>
+                    <p>const goodbye = function bye(){</p>
+                    <p>console.log('Goodbye World!');</p>
+                    <p>};</p> 
+
+    <h2>Questions</h2>
+    <ul>
+            <li>What will happen if you use reserved words as variables?</li>
+
+            <li>For string concatenation use the + operator to add the two strings together<br>
+                'Java' + 'Script' + ' ' + 'Ninja';<br>
+                 'JavaScript Ninja'<br>
+                Why did they not type JavaScript instead of separating 'Java' and 'Script'?</li>
+            </ul>           
+   
+</main>
+
+<footer>
+        <p>&copy; <span id="theYear"></span> | Anita Barbra Kalu | Nigeria | <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a></p>
+    </footer>
+    <script src="../js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
 </body>
 </html>

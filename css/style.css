@@ -1,9 +1,42 @@
 body {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 1em;
+    border-radius: 5px;
   }
   
-  h1 {
+h1 {
     background-color: blue;
+    color: cornsilk;
     padding: 1em;
+    border-radius: 5px;
   }
+
+h2 {
+  color: brown;
+  font-size: 40px;
+}
+
+main {
+    display: block;
+    color: black;
+  }
+
+footer {
+  border-radius: 5px;
+  text-align: center;
+  font-size: 20px;
+  padding: 1em;
+  background-color: blue;
+  color: cornsilk;
+
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: rgb(56, 104, 70);
+
+}
