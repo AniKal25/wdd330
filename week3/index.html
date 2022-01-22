@@ -5,12 +5,123 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 330</title>
-     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <h1>Week 3 Notes</h1>
 
     <h2>Notes</h2>
+    <main>
+        <ul>
+            <li>JavaScript is a cross-platform, object-oriented scripting language.
+                 It is a small and lightweight language. Inside a host environment (a web browser), 
+                 JavaScript can be connected to the objects of its environment to provide programmatic 
+                 control over them.</li>
+            <li>JavaScript contains a standard library of objects, such as Array, Date, and Math, 
+                and a core set of language elements such as operators, control structures, and statements.</li>
+            <li>The best way we learn anything about JavaScript is by practice and exercise questions.</li>
+        </ul>
+
+        <h2>Object</h2>
+        <p>An object is a self-contained set of related values and functions. They act as a collection of 
+            named properties that map to any JavaScript value such as strings, numbers, booleans, arrays and functions. 
+            Another way to think about an object is that it's like a dictionary where you look up a property name and 
+            see a value.</p>
+
+        <h3>Object Literals</h3>
+        <p>An object literal is an object that is created directly in the language by wrapping all its properties 
+            and methods in curly braces {}. Here is an example of an object literal that describes the Man of Steel:</p>
+            <p></p>const superman = {
+                <p>name: 'Superman',</p>
+                <p>'real name': 'Clark Kent',</p>
+                <p>height: 75,</p>
+                <p>weight: 235,</p>
+                <p>hero: true,</p>
+                <p>villain: false,</p>
+                <p>allies: ['Batman','Supergirl','Superboy'],</p>
+                <p>fly() {</p>
+                    <p>return 'Up, up and away!';</p>
+                    <p>}</p>
+                    <p>};</p>
+
+        <p>NB: To create an object literal, simply enter a pair of curly braces {}, and it is also possible 
+            to create an object using a constructor function such as this example: </p>
+            <p>const spiderman = new Object();</p>
+
+        <h3>Accessing Properties</h3>
+        <p>You can access the properties of an object using the dot notation like in the example below:</p>
+        <p>superman.name</p>
+        <p> 'Superman'</p>
+
+        <h3>Calling Methods</h3>
+        <p>To call an object's method you can also use dot or bracket notation. 
+            Calling a method is the same as invoking a function, so parentheses need to be placed after the method name:</p>
+        <p>superman.fly()</p>
+        <p>'Up, up and away!'</p>
+
+
+        <p>superman['fly']()</p>
+        <p>'Up, up and away!'</p>
+
+        <h2>The Document Object Model</h2>
+        <p>The Document Object Model (DOM) allows you to access elements of a web page and enable interaction 
+            with the page by adding and removing elements, changing the order, content and attributes of elements, 
+            and even altering how they are styled. It  represents an HTML document as a network of connected nodes that form a tree-like structure.</p>
+        <p><a href="heros.html">Example of a web page</a> Contains a heading and three paragraph elements.</p>
+
+        <h3>Getting An Element By Its ID</h3>
+        <p>The getElementById() returns a reference to the element  with a unique id attribute that is given as an argument. </p>
+        <p>const h1 = document.getElementById('title');</p>
+        <p>Every id attribute should be unique to just one element</p>
+
+        <h3>Get Elements By Their Tag Name</h3>
+        <p>The getElementsByTagName() will return a live node list of all the elements with the tag name that is provided as an argument. </p>
+        <p>const listItems = document.getElementsByTagName('li');</p>
+
+        <h3>Get Elements By Their Class Name</h3>
+        <p>getElementsByClassName() will return a live node list of all elements that have the class name that is supplied as an argument.</p>
+        <p>const heroes = document.getElementsByClassName('hero');</p>
+
+        <h3>Query Selectors</h3>
+        <p>The document.querySelector() method allows you to use CSS notation to find the first element 
+            in the document that matches that matches a CSS selector provided as an argument.</p>
+        <p>The document.querySelectorAll() method also uses CSS notation but returns a node list of all 
+            the elements in the document that match the CSS query selector. </p>
+        
+
+        <h2>Events</h2>
+        <p> Events are another part of the DOM and they are what provides the link between the web page and user interactions. 
+            Every time a user interacts with a web page, such as clicking on a link, 
+            pressing a key, or moving a mouse, an event occurs that our program can detect and then respond to.</p>
+
+        <h3>Event Listeners</h3>
+        <p>Event listeners in JavaScript are like setting a notification to alert you when something happens.
+            and the program can then respond appropriately. For example:</p>
+
+        <p>if (click) {</p>
+        <p>doSomething();</p>
+        <p>} else {</p>
+        <p> // carry on with rest of the program</p>   
+        <p>}</p>
+
+        <p>The problem with this approach is that the above code would have to keep 
+            returning to this if block to check if the click had happened.</p>
+
+        <p>The following code can be used to attach an event listener to the document that fires when the user clicks anywhere on the page:</p>
+        <p>document.body.addEventListener("click", doSomething);</p>
+        <p>Event listeners are added to elements on the page and are part of the DOM</p>
+
+    
+        
+
+
+            
+    
+    
+    
+    
+    
+    </main>
  
     
 
