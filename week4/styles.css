@@ -1,0 +1,19 @@
+.divBoard {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    
+}
+
+.divBoard div {
+    /*border: 1px solid black;*/
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+}
+.divBoard div:nth-child(3n) {
+    border-right: none;
+}
+
+.divBoard div:nth-child(n+7) {
+    border-bottom: none;
+}

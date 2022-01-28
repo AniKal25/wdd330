@@ -12,6 +12,67 @@
 
     <h2>Notes</h2>
     <main>
+        <ul>
+            <li>Forms are the primary method used for entering data into a browser.</li>
+            <li>Forms have a variety of controls that are used for entering different types of information.</li>
+            <li>Object-oriented programming (OOP) is a way of programming that uses objects that encapsulate their own properties and methods.</li>
+            <li>Constructor functions can be used to create instances of objects.</li>
+            <li>JavaScript libraries provide methods to make common tasks easier to achieve.</li>
+            <li>Libraries can make programming much easier, but you should think carefully about whether you require a library, and which one is best for your needs.</li>
+            </ul> 
+
+
+        <h2>Forms</h2>
+        <p>Forms are a very common method of interacting with a web page, and most of us use forms every day to log in to our favorite sites.
+            Forms are made up of a <form> element that contains form controls such as input fields, select menus and buttons.
+                 These input fields can be populated with information that is processed once the form has been submitted.
+        </p>
+        <p><a href="heros.html">Ninja Quiz</a></p>
+        <p>The default type of input field is "text", which is used for entering a short piece of text, such as a username. 
+            In our example, we use a text input field to enter the name of the superhero.</p>
+
+        <h2>Object-Oriented Programming in JavaScript</h2>
+        <p>Object-oriented programming is a style of programming that involves separating the code into objects that have properties and methods.
+            An object is a component of a program that knows how to perform certain actions and how to interact with other elements of the program.
+        </p>
+
+        <h3>Constructor Functions</h3>
+        <p>This is a function that defines the properties and methods of an object. Here is the dice example rewritten as a constructor function:<br>
+        const Dice = function(sides=6){<br>
+            this.sides = sides;<br>
+            this.roll = function() {<br>
+                return Math.floor(this.sides * Math.random() + 1)<br>
+            }<br>
+        }<br>
+        The keyword "this" is used to represent the object that will be returned by the constructor function.</p>
+
+
+
+
+
+        <h2>Modern JavaScript Development</h2>
+        <h3>Libraries</h3>
+        <p>A JavaScript library is a piece of code that provides several methods that make it easier to achieve common tasks.
+             JavaScript is an extremely flexible language that can accomplish most programming tasks- but not all undertakings are as easy to do as they should be.</p>
+        
+        <h3>jQuery</h3>
+        <p>jQuery is the most popular of all the JavaScript libraries used today, as seen in these statistics on W3Techs and Built With.
+
+        </p>
+
+        <h3>ES6 Modules</h3>
+        <p> All code in modules is always in strict mode without the need for 'use strict' and there is no way to opt out of this.
+        A module has its own global scope, so any variables created in the top-level of a module can only be accessed within that module.
+        The value of this in the top level of a module is undefined, rather than the global object.
+        You can't use HTML-style comments in modules (although this isn't very common in any JavaScript program these days).
+        </p>
+        
+        <h3>Templates</h3>
+        <p>Templates can be written in HTML or another language, such as markdown, which compiles into HTML. 
+            They can be whole web pages, but are often just partials — parts of a page. This means that the application can update part of the page without having to make a request to the server, saving an HTTP request. 
+        </p>
+        
+
 
     </main>
 <footer>
