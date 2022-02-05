@@ -1,5 +1,6 @@
 body {
     font-size: 20px;
+    background-color: cornsilk;
     font-family: Arial, Helvetica, sans-serif;
     padding: 1em;
     border-radius: 5px;
@@ -21,6 +22,15 @@ main {
     display: block;
     color: black;
   }
+
+ol li::after {
+    content: '✅';
+  }
+
+
+main ul li::before {
+  content: '💀';
+}
 
 footer {
   border-radius: 5px;

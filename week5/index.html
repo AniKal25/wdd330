@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 330</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <h1>Week 5 Notes</h1>
+
+    <h2>Notes</h2>
+    <main>
+        <ul>
+            <li>Bugs are unavoidable in code, and it's best to find them early rather than later.</li>
+            <li>JavaScript can be put into strict mode using the string "use strict". This can be used in a whole file or just a single function.</li>
+            <li>Feature detection can check whether a method is supported before calling it, helping to avoid an exception being thrown.</li>            
+            <li>An error object is created when an exception occurs.</li>
+             </ul> 
+        
+        <h2>Testing and Debugging</h2>
+        <p>It is important to know that errors and bugs are a fact of life in programming ― they will always be there. 
+            Therefore, it is up to us as programmers to do everything possible to minimize errors occurring, and find ways 
+            to identify and deal with them quickly.</p>
+
+        <h3>Errors</h3>
+        <p>Errors are caused when something goes wrong in a program. They are usually caused by one of the following:</p>
+        <ul>
+            <li>System error ― there's a problem with the system or external devices with which the program is interacting.</li>
+            <li>Programmer error ― the program contains incorrect syntax or faulty logic; it could even be as simple as a typo.</li>
+            <li>User error ― the user has entered data incorrectly, which the program is unable to handle.</li>
+        </ul>
+
+        <h3>Exceptions</h3>
+        <p>An exception is an error that produces a return value that can then be used by the program to deal with the error.</p>
+
+        <h3>Warnings</h3>
+            <p>A warning can occur if there's an error in the code that isn't enough to cause the program to crash. This means the program will continue to run after a warning.</p>
+
+        <h3>Strict mode</h3>
+        <p>ECMAScript 5 introduced a strict mode that produces more exceptions and warnings and prohibits the use of some deprecated features.
+
+            <p>function strictly(){</p> 
+            <p>'use strict';</p>
+            <p>// function code goes here</p>
+            <p>}</p>
+            </p>
+
+        <h3>Debugging in the Browser</h3>
+        <p>Debugging is the process of finding out where bugs occur in the code and then dealing with them. 
+            In many cases, the point at which an error occurs is not always where it originated, 
+            so you will need to run through the program to see what's happening at different stages of its execution.</p>
+
+        <h3>Debugging Tools</h3>
+        <p>Most modern browsers also have a debugging tool that allows you to set breakpoints in your code that will pause it at certain points. 
+            You can then see the values of all the variables at those points and modify them. This can be very useful when trying to track down bugs. </p>
+        <p>Here are the links to the debugger documentation for each of the major browsers:</p>
+
+        <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Tools/Debugger" target="_blank">Firefox</a></li>
+            <li><a href="https://docs.microsoft.com/en-us/archive/microsoft-edge/legacy/developer/" target="_blank">Edge</a></li>
+            <li><a href="https://developer.chrome.com/docs/devtools/" target="_blank">Chrome</a></li>
+            <li><a href="https://developer.apple.com/library/archive/documentation/AppleApplications/Conceptual/Safari_Developer_Guide/Debugger/Debugger.html" target="_blank">Safari</a></li>
+        </ul>
+
+
+        <h3>Errors Objects</h3>
+        <p>const error = new Error();</p>
+        <p> const error = new Error('Oops, something went wrong');</p>
+        <p>const error = new TypeError('You need to use numbers in this function');</p>
+
+
+        <h3>Exception Handling</h3>
+        <p>When an exception occurs, the program terminates with an error message. This is ideal in development as it allows us to identify and fix errors.</p>
+        
+        <h3>Try, catch, and finally</h3>
+        <p>function imaginarySquareRoot(number) {</p>
+        <p>'use strict';</p>
+        <p>let answer;</p>
+        <p>try {</p>
+        <p>answer = String(squareRoot(number));</p>
+        <p>} catch(error) {</p>
+        <p>answer = squareRoot(-number)+"i";</p>
+        <p>} finally {</p>
+        <p>return `+ or - ${answer}`;</p>
+        <p>}</p>
+        <p>}</p> 
+
+
+        <h3>Tests</h3>
+        <p>Testing is an important part of programming that can often be overlooked. Writing good tests means your code will
+             be less brittle as it develops, and any errors will be identified early on.</p>
+        <p>function itSquareRoots4() {</p>
+        <p>return squareRoot(4) === 2;</p>
+        <p>}</p>
+
+        <h3>Test-driven Development</h3>
+        <p>Test driven development is the process of writing tests before any actual code. Obviously these tests will initially fail, because there is no code to test.</p>
+        <p>The code is continually tested at each stage to make sure it continues to work. These process is considered:</p>
+             
+        <ul>
+            <li>Write tests (that initially fail)</li>
+            <li>Write code to pass the tests</li>
+            <li>Refactor the code</li>
+            <li>Test refactored code</li>
+            <li>Write more tests for new features</li>
+        </ul>
+
+        <p>Test-driven development is the practice of writing tests that fail, 
+            then writing the code that passes the test, then refactoring the code every time a new feature is implemented.</p>
+                
+                
+                
+    </main>
+<footer>
+    <p>&copy; <span id="theYear"></span> | Anita Barbra Kalu | Nigeria | <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a></p>
+    </footer>
+    <script src="../js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    
+</body>
+</html>
