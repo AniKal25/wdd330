@@ -1,0 +1,45 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {  
+    main {padding: 0 10rem;}
+
+    section {        
+        max-width: 600px;
+        margin: 0 auto;
+        
+    }
+
+    form {        
+        width: 97%;
+        
+    }
+
+    .item span {        
+        font-size: 1.2rem;
+    }
+   
+
+    .btnAll, .btnActive, .btnComplete {
+        padding: 15px;        
+    }
+    
+    
+footer {
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    padding: 1em;
+    background-color: blue;
+    color: cornsilk;
+  
+  }
+  
+  a {
+    color: black;
+  }
+  
+  a:hover {
+    color: rgb(56, 104, 70);
+  
+  }
+    
+} /*end large */
