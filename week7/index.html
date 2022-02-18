@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 330</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <h1>Week 7 Notes</h1>
+
+    <h2>Notes</h2>
+    <main>
+        <ul>
+            <li> Functions have built-in properties such as length, but can have custom properties added.</li>
+            <li>Functions are able to dynamically redefine themselves in the body of the function, depending on certain conditions.</li>
+            <li>Ajax is a technique for sending and receiving data asynchronously in the background.</li>
+            <li>The data can be sent in many forms, but it is usually in JSON.</li>
+            <li>Ajax can be used for communicating with external APIs.</li>
+        </ul> 
+
+    <h2>Further Functions</h2>
+    <p> In JavaScript, functions are first-class objects, which means they can be passed around in 
+        the same way as every other value. They can have their own properties and methods, as well as 
+        accepting other functions as parameters and being returned by other functions. </p>
+
+    <h3>Immediately Invoked Function Expressions</h3>
+    <p> IIFE - (pronounced 'iffy') is an anonymous function that, as the name suggests, 
+        is invoked as soon as it's defined. This is easily achieved by placing parentheses at the 
+        end of the function definition</p>
+
+       <p>(function(){</p>
+       <p>const temp = 'World';</p>
+       <p>console.log(`Hello ${temp}`);</p>
+       <p>})();</p>
+       <p><< 'Hello World'</p> 
+
+    <h3>Init-Time Branching</h3>
+    <p>This technique can be used with the feature detection to create functions that rewrite themselves</p>
+
+    <h3>Callbacks</h3>
+    <p>Callbacks can be used to facilitate event-driven asynchronous programming.</p>
+
+    <h3>Promises</h3>
+    <p>Promises don't do anything that can't already be achieved using callbacks, 
+        but they help simplify the process, and avoid the convoluted code that can result from using multiple callbacks.</p>
+
+    <h2>Ajax</h2>
+    <p>Ajax is a technique that allows web pages to communicate asynchronously with a server, and it dynamically updates web pages without reloading.</p>
+
+    <h3>JSON Responses</h3>
+    <p>JSON is probably the most common format for AJAX responses. 
+        The json() method is used to deal with these by transforming a stream of JSON data into a promise that resolves to a JavaScript object.</p>
+
+    <p>fetch(url)</p>
+    <p>.then( response => response.json() ); // transforms the JSON data into a JavaScript object</p>
+    <p>.then( data => console.log(Object.entries(data)) )</p>
+    <p>.catch( error => console.log('There was an error: ', error))</p>
+    
+
+
+
+
+
+    </main>
+<footer>
+    <p>&copy; <span id="theYear"></span> | Anita Barbra Kalu | Nigeria | <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a></p>
+</footer>
+<script src="../js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+</body>
+</html>

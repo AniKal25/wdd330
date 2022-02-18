@@ -34,6 +34,12 @@ const links = [
       url: "week6/index.html"
       
     },
+
+    {
+      label: "Week 7 Notes",
+      url: "week7/index.html"
+      
+    },
   ]
 
   let ol = document.getElementById("linksList");
