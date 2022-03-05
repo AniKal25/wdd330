@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 330</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <h1>Week 9 Notes</h1>
+
+    <h2>Notes</h2>
+    <main>
+    <h2>The Window Object</h2>
+    <p>Every JavaScript environment has a global object.</p>
+    <p>Any variables that are created in the global scope are actually properties of this object.</p>
+    <p>Any functions are methods of it. In a browser environment the global object is the window object, which represents the browser window that contains a web page.</p>
+
+    <h3>The Browser Object Model</h3>
+    <p>The Browser Object Model (or BOM for short) is a collection of properties and methods that contain information about the browser and computer screen.</p>
+
+    <h3>The Document Object</h3>
+    <p>Each window object contains a document object. This object has properties and methods that deal with the page that has been loaded into the window.</p>
+
+    <h3>Cookies</h3>
+    <p>Cookies are small files that are saved locally on a user's computer. They were invented by Netscape as a way of getting round HTTP being a stateless protocol.</p>
+    <p>Cookies can be used for personalizing a user's browsing experience, storing user preferences, keeping track of user choices (such as a shopping cart), authentication and tracking users.</p>
+
+    <h3>Creating Cookies</h3>
+    <p>To create a cookie, you assign it to JavaScript's “cookie jar”, using the document.cookie property, like so:</p>
+    <p>document.cookie = 'name=Superman';</p>
+    <p><< "name=Superman"</p>
+
+    <h3>Reading Cookies</h3>
+    <p>To see the current contents of the cookie jar, simply enter document.cookie:</p>
+    <p>document.cookie:</p>
+        <p><< "name=Batman; hero=true; city=Gotham"</p>
+
+    <h3>Animation</h3>
+    <p>The setTimeOut() and setInterval() methods can be used to animate elements on a web page.</p>
+
+    <h2>HTML5 APIs</h2>
+    <p>HTML5 was for HTML what ES6 was for JavaScript - it added a large number of new features to the specification. It also went beyond the actual markup language and brought together a number of related technologies such as CSS and JavaScript.</p>
+
+    <h3>The data- Attribute</h3>
+    <p>The data- attribute is a way of embedding data in a web page using custom attributes that are ignored by the browser. They're also private to a page, so are not intended to be used by an external service - their sole purpose is to be used by a JavaScript program.</p>
+
+    <h3>Geolocation</h3>
+    <p>The Geolocation API is used to obtain the geographical position of the device. This means it can be used to find the user's exact location, then link to nearby places or measure the speed at which the user is moving.</p>
+
+    <h3>Notifications</h3>
+    <p>The Notification API allows you to show messages using the system's notifications. This is usually a popup in the corner of the screen, but it changes depending on the operating system.</p>
+
+    <h3>Multimedia</h3>
+    <p>Before HTML5, it was notoriously difficult to display audio and video in browsers, and plugins such as Flash often had to be used. HTML5 introduced the "audio" and "video" tags used to insert audio and video clips into a web page. It also introduced a Media API for controlling the playback of the clips using JavaScript.</p>
+
+
+
+
+    </main>
+
+<footer>
+    <p>&copy; <span id="theYear"></span> | Anita Barbra Kalu | Nigeria | <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a></p>
+</footer>
+    <script src="../js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+</body>
+</html>
