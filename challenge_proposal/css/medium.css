@@ -1,0 +1,7 @@
+@media screen and (min-width: 560px) {
+
+    nav {
+        max-width: 70rem;
+        margin: auto;
+    }
+}
